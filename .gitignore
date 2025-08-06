@@ -1,0 +1,24 @@
+# Build artifacts
+build/
+Debug/
+Release/
+
+# Object and binary files
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.d
+
+# STM32CubeMX generated file
+.mxproject
+
+# Backup files
+*~
+*.swp
+
+# Documentation
+/Docs/
