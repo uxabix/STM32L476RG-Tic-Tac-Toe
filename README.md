@@ -1,27 +1,41 @@
 # Tic-Tac-Toe on STM32L476RG
 
-This project is an implementation of the classic Tic-Tac-Toe game on an STM32L476RG microcontroller. It was developed in January 2025 as a team project for the Computer Architecture (Architektura Komputerów) course during the 3rd semester at Politechnika Białostocka.
+This project is a team-based implementation of the classic Tic-Tac-Toe game developed for the STM32L476RG microcontroller using the C programming language and the STM32 HAL library. It was created in January 2025 as part of the **Computer Architecture** (*Architektura Komputerów*) course during the **3rd semester of studies at Politechnika Białostocka**.
 
-The game features a graphical interface on an OLED display and is controlled via a computer keyboard using USART communication.
+The game features a graphical interface rendered on an OLED display and is controlled through a computer keyboard using **USART** serial communication.
 
-## Features
+## 👥 Team Members
 
--   **Game Modes:** Play against another player (2P) or against the AI (1P).
--   **Variable Board Size:** Choose between 3x3, 4x4, and 5x5 game boards.
--   **Graphical Display:** Utilizes an OLED display (SSD1306/SSD1309) to render the game board and menus.
--   **Keyboard Control:** Game input is handled through a standard computer keyboard via a serial terminal.
--   **AI Opponent:** The single-player mode features a computer opponent powered by the Minimax algorithm.
--   **Custom Rules:** An optional game mode where game pieces are randomly removed from the board, adding an extra challenge.
--   **Themes:** Switch between light and dark themes for visual preference.
+- **Kiryl Alishkevich**
+- **Igor Kondratowicz**
+- **Konrad Łupiński**
+- **Paweł Rutkowski**
 
-## Hardware Requirements
+## 🎮 Features
 
--   **Microcontroller:** STM32L476RG Nucleo-64 board.
--   **Display:** OLED Display with an SSD1306 or SSD1309 driver (connected via I2C).
--   **PC/Laptop:** A computer to connect to the Nucleo board for power and serial communication.
+- **Game Modes:** 
+  - Player vs Player (2P)
+  - Player vs AI (1P)
+- **Board Sizes:** 
+  - 3x3, 4x4, 5x5 grids
+- **Graphical Display:** 
+  - OLED screen with **SSD1306** or **SSD1309** driver (I2C)
+- **USART Keyboard Control:** 
+  - Game input via a PC keyboard through a serial terminal
+- **AI Opponent:** 
+  - Powered by the **Minimax algorithm**
+- **Custom Rule Mode:** 
+  - Randomly removes pieces during the game for added challenge
+- **Visual Themes:** 
+  - Light and Dark modes
 
-## Project Structure
+## 🛠️ Hardware Requirements
 
+- **Microcontroller:** STM32L476RG Nucleo-64 development board
+- **Display:** OLED screen with SSD1306/SSD1309 driver via I2C
+- **Computer:** Required for serial input and power
+
+## 📁 Project Structure
 The project is organized into the following main directories:
 
 -   `Core/`: Contains the core application source code.
@@ -36,7 +50,7 @@ The project is organized into the following main directories:
 -   `minimax.c`: Implements the AI logic for the single-player mode.
 -   `winChecks.c`: Contains functions to check for win, lose, or draw conditions.
 
-## Setup and Installation
+## 🧩 Setup and Installation
 
 1.  **Clone the Repository:**
     ```sh
@@ -71,3 +85,8 @@ The project is organized into the following main directories:
     -   `d`: Move cursor right
     -   `Enter`: Confirm selection / Place a piece
     -   `q`: Quit the current game and return to the main menu
+  
+    
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This work was created as part of coursework at Bialystok University of Technology for educational and research purposes. When using or referencing this work, please provide appropriate attribution.
