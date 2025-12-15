@@ -4,6 +4,23 @@ This project is a team-based implementation of the classic Tic-Tac-Toe game deve
 
 The game features a graphical interface rendered on an OLED display and is controlled through a computer keyboard using **USART** serial communication.
 
+## Demo
+
+### Screenshots
+<p align="center">
+  <img src="Demo/P1.jpg" width="500">
+  <img src="Demo/P2.jpg" width="500">
+  <img src="Demo/P3.jpg" width="500">
+  <img src="Demo/P4.jpg" width="500">
+  <img src="Demo/P5.jpg" width="500">
+</p>
+
+### Video demonstration
+> **Note:** You'll need to download it first
+
+[▶ Watch full demonstration video](Demo/Demonstration.mp4)
+
+
 ## 👥 Team Members
 
 - **Kiryl Alishkevich**
@@ -12,22 +29,18 @@ The game features a graphical interface rendered on an OLED display and is contr
 - **Paweł Rutkowski**
 
 ## 🎮 Features
-
-- **Game Modes:** 
-  - Player vs Player (2P)
-  - Player vs AI (1P)
-- **Board Sizes:** 
-  - 3x3, 4x4, 5x5 grids
-- **Graphical Display:** 
-  - OLED screen with **SSD1306** or **SSD1309** driver (I2C)
-- **USART Keyboard Control:** 
-  - Game input via a PC keyboard through a serial terminal
-- **AI Opponent:** 
-  - Powered by the **Minimax algorithm**
-- **Custom Rule Mode:** 
-  - Randomly removes pieces during the game for added challenge
-- **Visual Themes:** 
-  - Light and Dark modes
+-   **Game Modes:** Play against another player (2P) or in single-player mode (1P) against an AI.
+-   **Advanced AI Opponent:**  
+    The single-player mode uses a Minimax-based algorithm with multiple optimizations.  
+    The AI dynamically adapts to the selected board size and game rules to ensure fast move calculation even on larger boards.
+-   **Variable Board Size:** Choose between 3x3, 4x4, and 5x5 game boards.
+-   **Pause & Resume:** The game can be paused at any moment and resumed later without losing progress.
+-   **Settings Menu:**  
+    Allows changing game rules, board size, and visual appearance directly from the menu.
+-   **Custom Rules:** An optional game mode where game pieces are randomly removed from the board, adding an extra challenge.
+-   **Themes:** Switch between light and dark themes for visual preference.
+-   **Graphical Display:** Utilizes an OLED display (SSD1306/SSD1309) to render the game board and menus.
+-   **Keyboard Control:** Game input is handled through a standard computer keyboard via a serial terminal.
 
 ## 🛠️ Hardware Requirements
 
